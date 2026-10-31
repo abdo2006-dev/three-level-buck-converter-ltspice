@@ -1,5 +1,7 @@
 # Measurement definitions
 
+Abdulrahman Ahmed Mohammed
+
 For a window `[ta, tb]`, means use the time integral divided by window duration. Window endpoints are linearly interpolated; integration is trapezoidal and time weighted. Ripple is maximum minus minimum in that window. Startup extrema are taken from their complete available records.
 
 - Nominal feedback and fixed-PWM comparison: late window 1.45–1.50 ms; full record 0–1.50 ms.

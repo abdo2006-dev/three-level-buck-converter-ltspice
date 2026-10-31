@@ -1,5 +1,7 @@
 # Engineering explanation
 
+Abdulrahman Ahmed Mohammed
+
 ## Flying-capacitor balance
 
 The capacitor creates two intermediate switching levels: `VIN − VFly` and `VFly`. At `VFly = VIN/2`, the levels coincide. This reduces the inductor voltage excursion in balanced operation. Startup imbalance changes both inductor voltage and device stress, so the ideal half-input stress assumption does not apply to the observed startup.
