@@ -1,0 +1,22 @@
+* Explicit RC state realizations of derived compensators. Leakage pole 0.01 rad/s.
+.subckt CTRL_A ea ca 0
+BintA 0 ia I=10.4593927209*V(ea)
+CintA ia 0 1 IC=0
+RleakA ia 0 100
+BbufferA ba 0 V=V(ia)
+RfilterA ba fa 5.30516476973e-05
+CfilterA fa 0 1 IC=0
+BcompA ca 0 V=7.17383307414*V(ia)+(1-7.17383307414)*V(fa)
+.ends CTRL_A
+.subckt CTRL_B eb cb 0
+BintB 0 ib I=1661.90546898*V(eb)
+CintB ib 0 1 IC=0
+RleakB ib 0 100
+BbufferB bb 0 V=V(ib)
+RfilterB bb fb 3.9788735773e-06
+CfilterB fb 0 1 IC=0
+BleadB lb 0 V=6.18140633065*V(ib)+(1-6.18140633065)*V(fb)
+RfilterC lb fc 1.98943678865e-06
+CfilterC fc 0 1 IC=0
+BcompB cb 0 V=12.3628126613*V(lb)+(1-12.3628126613)*V(fc)
+.ends CTRL_B

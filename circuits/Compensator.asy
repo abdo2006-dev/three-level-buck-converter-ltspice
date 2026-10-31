@@ -1,0 +1,15 @@
+Version 4
+SymbolType CELL
+RECTANGLE Normal 0 0 192 96
+WINDOW 0 96 -24 Center 2
+WINDOW 3 96 120 Center 2
+SYMATTR Prefix X
+PIN 0 48 LEFT 8
+PINATTR PinName error
+PINATTR SpiceOrder 1
+PIN 192 48 RIGHT 8
+PINATTR PinName command
+PINATTR SpiceOrder 2
+PIN 96 96 BOTTOM 8
+PINATTR PinName GND
+PINATTR SpiceOrder 3

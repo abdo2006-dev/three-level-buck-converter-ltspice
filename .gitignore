@@ -1,0 +1,7 @@
+*.raw
+*.log
+*.net
+*.op.raw
+*.bak
+*.DS_Store
+__pycache__/
